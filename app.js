@@ -1,5 +1,5 @@
 // Set an initial global color value
-let globalColor = 'overlay';
+let globalColor = 'classic';
 const gridContainer = document.getElementById("grid-container");
 
 function generateGrid(rows, columns) {
