@@ -39,9 +39,18 @@ function generateCandyColors() {
     return candyColorOptions[Math.floor(Math.random() * candyColorOptions.length)];
 }
 
-document.querySelector('#classic-button').addEventListener('click', () => globalColor = 'classic');
-document.querySelector('#overlay-button').addEventListener('click', () => globalColor = 'overlay');
-document.querySelector('#candy-button').addEventListener('click', () => globalColor = 'candy');
+document.querySelector('#classic-button').addEventListener('click', () => {
+     globalColor = 'classic';
+     eraseGrid();
+    });
+document.querySelector('#overlay-button').addEventListener('click', () => {
+    globalColor = 'overlay';
+    eraseGrid();
+    });
+document.querySelector('#candy-button').addEventListener('click', () => {
+    globalColor = 'candy';
+    eraseGrid();
+    });
 document.querySelector('#erase').addEventListener('click', () => eraseGrid());
 
 function removeGrid() {
