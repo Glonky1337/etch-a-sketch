@@ -9,7 +9,6 @@ function generateGrid(rows, columns) {
         let cell = document.createElement("div");
         gridContainer.appendChild(cell).className = "grid-item";
         cell.addEventListener('mouseover', function(e) {
-            console.log(globalColor);
             if (globalColor === 'black') {
                 cell.style.backgroundColor = 'rgb(1,1,1)';
                 cell.style.opacity = '1';
