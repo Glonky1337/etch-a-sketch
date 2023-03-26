@@ -29,6 +29,17 @@ function generateGrid(rows, columns) {
     };
 };
 
+function generateCandyColors() {
+    const candyColorOptions = [
+        'rgb(225,159,196)', // pastel pink
+        'rgb(138,141,222)', // pastel purple
+        'rgb(255,223,158)', // pastel yellow
+        'rgb(119,221,119)', // pastel green
+        'rgb(158,189,219)'  // pastel blue
+    ];
+    return candyColorOptions[Math.floor(Math.random() * candyColorOptions.length)];
+}
+
 document.querySelector('#classic-button').addEventListener('click', () => globalColor = 'black');
 document.querySelector('#overlay-button').addEventListener('click', () => globalColor = 'overlay');
 document.querySelector('#candy-button').addEventListener('click', () => globalColor = 'candy');
