@@ -60,24 +60,24 @@ function removeGrid() {
 }
 
 // grid options: small, medium, large
-generateGrid(10,15); // default grid
+generateGrid(9,15); // default grid
 
 const smallButton = document.querySelector('#small-button');
 smallButton.addEventListener('click', () => {
     removeGrid();
-    generateGrid(10,15);
+    generateGrid(9,15);
 });
 
 const mediumButton = document.querySelector('#medium-button');
 mediumButton.addEventListener('click', () => {
     removeGrid();
-    generateGrid(20, 30);
+    generateGrid(18, 30);
 });
 
 const largeButton = document.querySelector('#large-button');
 largeButton.addEventListener('click', () => {
     removeGrid();
-    generateGrid(40, 60);
+    generateGrid(36, 60);
 });
 
 function eraseGrid () {
