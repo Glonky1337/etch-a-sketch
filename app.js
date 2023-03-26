@@ -43,7 +43,7 @@ document.querySelector('#classic-button').addEventListener('click', () => global
 document.querySelector('#overlay-button').addEventListener('click', () => globalColor = 'overlay');
 document.querySelector('#candy-button').addEventListener('click', () => globalColor = 'candy');
 
-function clearGrid() {
+function removeGrid() {
     while (gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
     }
@@ -54,18 +54,26 @@ generateGrid(10,15); // default grid
 
 const smallButton = document.querySelector('#small-button');
 smallButton.addEventListener('click', () => {
-    clearGrid();
+    removeGrid();
     generateGrid(10,15);
 });
 
 const mediumButton = document.querySelector('#medium-button');
 mediumButton.addEventListener('click', () => {
-    clearGrid();
+    removeGrid();
     generateGrid(20, 30);
 });
 
 const largeButton = document.querySelector('#large-button');
 largeButton.addEventListener('click', () => {
-    clearGrid();
+    removeGrid();
     generateGrid(40, 60);
 });
+
+function eraseGrid () {
+    let cells = document.querySelectorAll('.grid-item');
+    cells.forEach((cell) => {
+        cell.style.backgroundColor = "";
+        cell.style.opacity = "";
+    })
+}
