@@ -20,7 +20,7 @@ function generateGrid(rows, columns) {
                     cell.style.opacity = (Number(opacity) + 0.2);
                 } 
             } else if (globalColor === 'candy') {
-                    cell.style.backgroundColor = 'rgb(255,159,196)';
+                    cell.style.backgroundColor = generateCandyColors();
                     cell.style.opacity = '1';
             } else {
                     globalColor = 'black';
