@@ -1,12 +1,12 @@
-# etch-a-sketch
+# Etch-a-Sketch
 
-Live: https://glonky1337.github.io/etch-a-sketch/
+:point_right: [Click Here to View the Live Demo](https://glonky1337.github.io/etch-a-sketch/) :point_left:
 
 An Etch-a-Sketch Game built with HTML, CSS, and JavaScript.
 
 ![website-preview](./etch-a-sketch-screenshot.png)
 
-## What I learned
+## Key Concepts Employed
 
 ### HTML:
 - Semantic HTML: The HTML code uses semantic tags to describe the content of the website, such as "header", "section", "main", and "footer".
