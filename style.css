@@ -139,3 +139,20 @@ button:hover:after {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: -75px;
+}
+#footer > a, .footer {
+    color: white;
+    text-decoration: none;
+    transition: 2s;
+}
+#footer > a:hover {
+    border-bottom: 1px solid white;
+    color: rgba(252, 252, 252, 0.849);
+}
